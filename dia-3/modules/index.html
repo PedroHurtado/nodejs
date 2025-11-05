@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="" data-page="page1">Pagina1</a></li>
+            <li><a href="" data-page="page2">Pagina2</a></li>
+            <li><a href="" data-page="page3">Pagina3</a></li>
+        </ul>
+    </nav>
+    <div id="content"></div>
+    <!--
+        exploradores que soportan modulos lo cargan
+        exploradores viejos no lo cargan porque no entienden el tipo
+    -->
+    <script src="main.js" type="module"></script>
+    <!--
+        exploradores que soportan modulos no lo cargan
+        exploradores viejos cargan el archivo old
+    -->
+    <script src="main.old.js" nomodule></script>
+</body>
+</html>
